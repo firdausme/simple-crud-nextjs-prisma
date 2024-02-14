@@ -3,9 +3,8 @@ import Update from "@/app/update";
 import Delete from "@/app/delete";
 import prisma from "@/app/prisma/prismaInstance";
 import {ProductDto} from "@/app/dto/Product";
-import withReactContent from "sweetalert2-react-content";
-import Swal from "sweetalert2";
-import axios from "axios";
+
+export const dynamic = "force-dynamic";
 
 async function getProduct() {
     return prisma.product.findMany({
