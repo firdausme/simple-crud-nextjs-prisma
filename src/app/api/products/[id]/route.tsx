@@ -1,4 +1,4 @@
-import {Product} from "@prisma/client";
+import type {Product} from "@prisma/client";
 import prisma from "@/app/prisma/prismaInstance";
 import {NextResponse} from "next/server";
 

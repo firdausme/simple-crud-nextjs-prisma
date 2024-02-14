@@ -1,5 +1,5 @@
 import prisma from "@/app/prisma/prismaInstance";
-import {Product} from "@prisma/client";
+import type {Product} from "@prisma/client";
 import {NextResponse} from "next/server";
 
 export const GET = async () => {
@@ -11,7 +11,7 @@ export const GET = async () => {
             quantity: true
         }
     });
-    
+
     return NextResponse.json(products, {status: 200})
 }
 
